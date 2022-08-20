@@ -7,7 +7,7 @@ class LoginPage {
     enterUser(username) {
         cy.get("[data-test='username']")
             .clear()
-            .type(username);
+            .type(username)
         return this
     }
 
