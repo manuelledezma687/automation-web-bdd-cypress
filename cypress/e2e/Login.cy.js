@@ -10,19 +10,19 @@ describe("Cypress POM Test Suite", function () {
 
 it('Usuario exitoso SauceDemo',function () {
     const login = new LoginPage()
-    login.navigate();
+    login.navigate()
     login.enterUser(this.credentials.standardUser)
     login.enterPassword(this.credentials.password)
-    login.submit();
+    login.submit()
     cy.get('.shopping_cart_link').should('be.visible')
   })
 
   it('Usuario Bloqueado SauceDemo', function() {
     const login = new LoginPage()
-    login.navigate();
+    login.navigate()
     login.enterUser(this.credentials.lockedOutUser)
     login.enterPassword(this.credentials.password)
-    login.submit();
+    login.submit()
     cy.get('[data-test="error"]').should('be.visible')
   })
 
@@ -31,16 +31,16 @@ it('Usuario exitoso SauceDemo',function () {
     login.navigate()
     login.enterUser(this.credentials.problemUser)
     login.enterPassword(this.credentials.password)
-    login.submit();
+    login.submit()
     cy.get('.shopping_cart_link').should('be.visible')
   })
 
   it('Usuario con problema de Performance SauceDemo', function()  {
     const login = new LoginPage()
-    login.navigate();
+    login.navigate()
     login.enterUser(this.credentials.performanceGlitchser)
     login.enterPassword(this.credentials.password)
-    login.submit();
+    login.submit()
     cy.get('.shopping_cart_link').should('be.visible')
   })
 
