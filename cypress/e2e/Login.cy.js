@@ -3,7 +3,6 @@ import LoginPage from "../integration/PageObject/LoginPage.js"
 describe("Cypress POM Test Suite", function () {
 
   beforeEach (function(){
-    cy.visit('/')
     cy.fixture('Users').then(credentials => {
       this.credentials = credentials;
     })

@@ -5,7 +5,6 @@ import ShopsPage from "../integration/PageObject/ShopsPage.js"
 describe('Compras de usuario', () => {
 
     beforeEach (function(){
-      cy.visit('/')
       cy.fixture('Users').then(credentials => {
         this.credentials = credentials;
         const login = new LoginPage();
