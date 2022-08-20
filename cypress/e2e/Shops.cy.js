@@ -18,8 +18,8 @@ describe('Compras de usuario', () => {
   
     it('Compra de 2 items',function () {
       const shops = new ShopsPage();
-      shops.Item('#add-to-cart-sauce-labs-backpack');
-      shops.Item('#add-to-cart-sauce-labs-bolt-t-shirt');
+      shops.clickOnItem('#add-to-cart-sauce-labs-backpack');
+      shops.clickOnItem('#add-to-cart-sauce-labs-bolt-t-shirt');
       shops.shoppingCart();
       shops.checkout();
       shops.fillForm("Byron","Stuart","C454818");
@@ -32,10 +32,10 @@ describe('Compras de usuario', () => {
     it('Examinar  al dropdown y boton de remover item',function () {
       const shops = new ShopsPage();
       shops.sortContainer('Price (low to high)');
-      shops.Item('#add-to-cart-sauce-labs-backpack');
-      shops.Item('#add-to-cart-sauce-labs-bolt-t-shirt');
-      shops.Item('[data-test="remove-sauce-labs-bolt-t-shirt"]');
-      shops.Item('[data-test="remove-sauce-labs-backpack"]');
+      shops.clickOnItem('#add-to-cart-sauce-labs-backpack');
+      shops.clickOnItem('#add-to-cart-sauce-labs-bolt-t-shirt');
+      shops.clickOnItem('[data-test="remove-sauce-labs-bolt-t-shirt"]');
+      shops.clickOnItem('[data-test="remove-sauce-labs-backpack"]');
       cy.get('.btn btn_secondary btn_small btn_inventory').should('not.exist')
 
     })

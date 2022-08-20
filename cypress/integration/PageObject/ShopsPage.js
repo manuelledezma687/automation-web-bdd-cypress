@@ -5,7 +5,7 @@ class ShopsPage {
         cy.visit('/')
     }
 
-    Item(item) {
+    clickOnItem(item) {
         cy.get(item).click()
     }
 
