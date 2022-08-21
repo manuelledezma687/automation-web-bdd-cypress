@@ -35,5 +35,13 @@ class ShopsPage {
     submitOrder() {
         cy.get('#finish').click()
     }
+
+    confirmOrder() {
+        cy.get('.complete-header').should('be.visible')
+    }
+
+    confirmRemovedItems() {
+        cy.get('.btn btn_secondary btn_small btn_inventory').should('not.exist')
+    }
 }
 export default ShopsPage
