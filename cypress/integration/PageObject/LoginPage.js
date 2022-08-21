@@ -1,5 +1,6 @@
 
 class LoginPage {
+    
     navigate() {
         cy.visit('/')
     }
@@ -20,6 +21,14 @@ class LoginPage {
 
     submit() {
         cy.get('[data-test="login-button"]').click()
+    }
+
+    confirmLogin(){
+        cy.get('.shopping_cart_link').should('be.visible')
+    }
+
+    confirmError(){
+        cy.get('[data-test="error"]').should('be.visible')
     }
 }
 export default LoginPage
