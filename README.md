@@ -19,8 +19,8 @@
   - **click({ timeout: 0, force: true })** Hace forzar el true, incluso si esta seleccionado vuelve a seleccionar.
   - **type()** Escribir.
   - **clear()** Limpiar.
-  - *check()* Chequear (checkbox).
-  - *uncheck()* Deschequear.
+  - **check()** Chequear (checkbox).
+  - **uncheck()** Deschequear.
   - **select()** Seleccionar.
   - **cy.wait(3000)** Ejemplo de una espera de 3 segs.
 ## Otros Ejemplos de click.

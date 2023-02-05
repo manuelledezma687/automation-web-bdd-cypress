@@ -1,8 +1,7 @@
 {
-    "tshirt":"#add-to-cart-sauce-labs-backpack",
-    "backpack":"#add-to-cart-sauce-labs-bolt-t-shirt",
-    "removeTshirt":"[data-test='remove-sauce-labs-bolt-t-shirt']",
-    "removeBackpack":"[data-test='remove-sauce-labs-backpack']",
-    "sortLowToHigh":"Price (low to high)"
-
+    "tshirt": "#add-to-cart-sauce-labs-backpack",
+    "backpack": "#add-to-cart-sauce-labs-bolt-t-shirt",
+    "removeTshirt": "[data-test='remove-sauce-labs-bolt-t-shirt']",
+    "removeBackpack": "[data-test='remove-sauce-labs-backpack']",
+    "sortLowToHigh": "Price (low to high)"
 }
